@@ -1,0 +1,69 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "nama": "Bakpia Pathok Original",
+      "kategori": "Makanan",
+      "harga": 35000,
+      "berat": "250gr",
+      "gambar": "https://images.unsplash.com/photo-1587049352846-4a232e08e7e2?w=600&q=80",
+      "deskripsi": "Bakpia Pathok premium isi kacang hijau kupas lembut dengan kulit renyah berlapis. Manisnya pas, dibuat fresh tanpa pengawet buatan, dan cocok dikirim ke luar kota.",
+      "stok": 15,
+      "hot": true,
+      "new": false,
+      "visible": true
+    },
+    {
+      "id": 2,
+      "nama": "Gudeg Kaleng Bu Tugu",
+      "kategori": "Makanan",
+      "harga": 50000,
+      "berat": "500gr",
+      "gambar": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&q=80",
+      "deskripsi": "Gudeg Jogja tradisional lengkap dengan krecek dan telur bebek, dikemas higienis dalam kaleng modern tanpa mengurangi keaslian rasanya. Praktis dan tahan hingga 1 tahun.",
+      "stok": 4,
+      "hot": true,
+      "new": false,
+      "visible": true
+    },
+    {
+      "id": 3,
+      "nama": "Kaos Jogja Istimewa",
+      "kategori": "Batik",
+      "harga": 85000,
+      "berat": "200gr",
+      "gambar": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80",
+      "deskripsi": "Kaos khas Jogja berbahan Premium Cotton Combed 30s yang super adem, menyerap keringat, dengan sablon eksklusif bertema budaya dan ikon Yogyakarta.",
+      "stok": 0,
+      "hot": false,
+      "new": true,
+      "visible": true
+    },
+    {
+      "id": 4,
+      "nama": "Batik Tulis Parang",
+      "kategori": "Batik",
+      "harga": 250000,
+      "berat": "300gr",
+      "gambar": "https://images.unsplash.com/photo-1606567595334-d39972c85dbe?w=600&q=80",
+      "deskripsi": "Kain Batik Tulis tradisional motif Parang khas Keraton Yogyakarta, dilukis manual dengan canting oleh pembatik lokal menggunakan bahan primissima katun halus.",
+      "stok": 2,
+      "hot": false,
+      "new": false,
+      "visible": true
+    },
+    {
+      "id": 5,
+      "nama": "Kerajinan Perak Kotagede (Disembunyikan)",
+      "kategori": "Kerajinan",
+      "harga": 175000,
+      "berat": "150gr",
+      "gambar": "https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=600&q=80",
+      "deskripsi": "Kerajinan cincin dan bros perak filigri khas Kotagede. Dibuat handmade secara detail dan presisi tinggi oleh pengrajin perak turun-temurun.",
+      "stok": 10,
+      "hot": false,
+      "new": true,
+      "visible": false
+    }
+  ]
+}
