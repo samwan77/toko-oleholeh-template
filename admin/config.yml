@@ -5,7 +5,7 @@ backend:
 media_library:
   name: uploadcare
   config:
-    publicKey: YOUR_UPLOADCARE_PUBLIC_KEY # Ganti dengan Public Key Uploadcare Anda
+    publicKey: 9eb287e4ec772d970ce9 
 
 collections:
   - name: "settings"
