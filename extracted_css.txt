@@ -1,0 +1,53 @@
+        <div class="nav-inner">
+            <button class="nav-btn active" data-tab="masalah">🔴 Masalah</button>
+            <button class="nav-btn" data-tab="aktor">🟡 Aktor</button>
+            <button class="nav-btn" data-tab="solusi">🟢 Solusi AMTG</button>
+            <button class="nav-btn" data-tab="roadmap">📅 Roadmap</button>
+            <button class="nav-btn" data-tab="progres">✅ Progres</button>
+            <button class="nav-btn" data-tab="mindmap">🧠 Mindmap</button>
+        </div>
+
+        <!-- SECTION 1: MASALAH -->
+        <section class="section active" id="masalah">
+            <h2 class="section-title">Pohon Masalah</h2>
+
+        // ============ INIT ============
+        renderCards(dataMasalah, 'grid-ma salah', 'problem');
+        renderCards(dataAktor, 'grid-aktor', 'actor');
+
+    <title>Gaza Research Map — GPRC UI 2026</title>
+    <style>
+
+        .timeline-desc {
+            font-size: 0.95em;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+
+    <nav>
+        <div class="nav-inner">
+            <button class="nav-btn active" data-tab="narasi">📝 Narasi Konflik</button>
+            <button class="nav-btn" data-tab="masalah">🔴 Masalah</button>
+            <button class="nav-btn" data-tab="aktor">🟡 Aktor</button>
+
+            </div>
+        </section>
+
+        <!-- SECTION 1: MASALAH -->
+
+        // ============ INIT ============
+        renderCards(dataMasalah, 'grid-masalah', 'problem');
+        renderCards(dataAktor, 'grid-aktor', 'actor');
+        renderCards(dataSolusi, 'grid-solusi', 'solution');
+        renderTimeline();
+        renderChecklist();
+        renderMM('masalah');
+        
+        // initialize zoom and pan for mindmap
+        setTimeout(resetZoomPan, 100);
+    </script>
+
+</body>
+

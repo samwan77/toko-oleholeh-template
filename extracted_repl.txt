@@ -1,0 +1,127 @@
+- [x] Update `index.html`
+  - [x] Fix `grid-ma salah` bug
+  - [x] Add Executive Summary section
+- [/] Create `research_draft.md` (Academic Draft for Paper)
+  - [ ] Pendahuluan
+  - [ ] Tinjauan Pustaka
+  - [ ] Metode Penelitian
+- [ ] Complete and write walkthrough
+
+---
+
+- [x] Update `index.html`
+  - [x] Fix `grid-ma salah` bug
+  - [x] Add Executive Summary section
+- [x] Create `research_draft.md` (Academic Draft for Paper)
+  - [x] Pendahuluan
+  - [x] Tinjauan Pustaka
+  - [x] Metode Penelitian
+- [/] Complete and write walkthrough
+
+---
+
+## 1. Perbaikan & Update `index.html` (Gaza Research Map)
+- **Bug Fix:** Terdapat sedikit kesalahan pengetikan di dalam file Anda, yaitu kode `renderCards(dataMasalah, 'grid-ma salah', 'problem');`. Hal ini menyebabkan daftar masalah *(Krisis Kemanusiaan, Local Ownership Lemah, dll)* tidak muncul di layar. Saya telah memperbaikinya menjadi `'grid-masalah'`.
+- **Narasi Konflik (Executive Summary):** Saya menyisipkan tab/menu baru bernama **📝 Narasi Konflik** yang muncul pertama kali saat halaman dibuka. Di sana, terdapat penjelasan draf pemetaan konflik Gaza per Juli 2026, mencakup analisis RDNA (kerugian $71,4 Miliar) serta 3 kebuntuan utama (Defisit Otoritas, Veto Israel, dan Kegagalan Mekanisme Historis).
+- **Peningkatan UI/UX Mindmap (Interaktif & Fleksibel):** Berdasarkan masukan audio Anda, kini area Mindmap sudah interaktif. Anda bisa **mengklik dan menggeser (drag)** kanvas mindmap ke segala arah (baik di laptop maupun layar sentuh HP). Tersedia juga tombol `+`, `-`, dan `reset` untuk melakukan *zoom*, atau Anda bisa menggunakan scroll pada *mouse* / gerakan *pinch* di layar HP untuk memperbesar dan memperkecil peta.
+
+---
+
+## 1. Perbaikan & Update `index.html` (Gaza Research Map)
+- **Bug Fix:** Terdapat sedikit kesalahan pengetikan di dalam file Anda, yaitu kode `renderCards(dataMasalah, 'grid-ma salah', 'problem');`. Hal ini menyebabkan daftar masalah *(Krisis Kemanusiaan, Local Ownership Lemah, dll)* tidak muncul di layar. Saya telah memperbaikinya menjadi `'grid-masalah'`.
+- **Narasi Konflik (Executive Summary):** Saya menyisipkan tab/menu baru bernama **📝 Narasi Konflik** yang muncul pertama kali saat halaman dibuka. Di sana, terdapat penjelasan draf pemetaan konflik Gaza per Juli 2026, mencakup analisis RDNA (kerugian $71,4 Miliar) serta 3 kebuntuan utama (Defisit Otoritas, Veto Israel, dan Kegagalan Mekanisme Historis).
+- **Peningkatan UI/UX Mindmap (Interaktif & Fleksibel):** Berdasarkan masukan audio Anda, kini area Mindmap sudah interaktif. Anda bisa **mengklik dan menggeser (drag)** kanvas mindmap ke segala arah (baik di laptop maupun layar sentuh HP). Tersedia juga tombol `+`, `-`, dan `reset` untuk melakukan *zoom*, atau Anda bisa menggunakan scroll pada *mouse* / gerakan *pinch* di layar HP untuk memperbesar dan memperkecil peta.
+- **🌍 Pemantauan Real-Time & Live Map Gaza (BARU!):** Menjawab tantangan Anda untuk membuat data lebih kredibel, saya telah membangun tab baru bernama **Live Map & News**. Bagian ini memiliki dua fitur utama:
+  1. **Peta Interaktif Kustom (menggunakan Leaflet.js):** Peta yang menampilkan koordinat spesifik Gaza dengan penanda (*markers*) titik krisis dan target simulasi pilot AMTG Anda.
+  2. **Berita Live Kemanusiaan (menggunakan ReliefWeb API):** Kode secara dinamis menarik (*fetch*) 10 berita/laporan kemanusiaan terbaru mengenai Gaza langsung dari *database* Perserikatan Bangsa-Bangsa (UN OCHA) setiap kali web dibuka!
+
+---
+
+## 1. Perbaikan & Update `index.html` (Gaza Research Map)
+- **Bug Fix:** Terdapat sedikit kesalahan pengetikan di dalam file Anda, yaitu kode `renderCards(dataMasalah, 'grid-ma salah', 'problem');`. Hal ini menyebabkan daftar masalah *(Krisis Kemanusiaan, Local Ownership Lemah, dll)* tidak muncul di layar. Saya telah memperbaikinya menjadi `'grid-masalah'`.
+- **Narasi Konflik (Executive Summary):** Saya menyisipkan tab/menu baru bernama **📝 Narasi Konflik** yang muncul pertama kali saat halaman dibuka. Di sana, terdapat penjelasan draf pemetaan konflik Gaza per Juli 2026, mencakup analisis RDNA (kerugian $71,4 Miliar) serta 3 kebuntuan utama (Defisit Otoritas, Veto Israel, dan Kegagalan Mekanisme Historis).
+- **Peningkatan UI/UX Mindmap (Interaktif & Fleksibel):** Berdasarkan masukan audio Anda, kini area Mindmap sudah interaktif. Anda bisa **mengklik dan menggeser (drag)** kanvas mindmap ke segala arah (baik di laptop maupun layar sentuh HP). Tersedia juga tombol `+`, `-`, dan `reset` untuk melakukan *zoom*, atau Anda bisa menggunakan scroll pada *mouse* / gerakan *pinch* di layar HP untuk memperbesar dan memperkecil peta.
+- **🌍 Pemantauan Real-Time & Live Map Gaza:** Menjawab tantangan Anda untuk membuat data lebih kredibel, saya telah membangun tab baru bernama **Live Map & News**. Bagian ini memiliki dua fitur utama:
+  1. **Peta Interaktif Kustom (Leaflet.js):** Peta wilayah Gaza dengan *markers* simulasi (telah diperbaiki agar langsung **berfungsi sempurna di Live Server** tanpa perlu muat ulang manual).
+  2. **Berita Live PBB (ReliefWeb API):** Kode secara dinamis menarik (*fetch*) 10 berita/laporan kemanusiaan terbaru mengenai Gaza langsung dari *database* UN OCHA setiap kali web dibuka.
+  3. **💡 Ringkasan Analisis Otomatis:** Sistem mendeteksi kata kunci (*keywords*) pada berita-berita terbaru yang masuk dan otomatis memformulasikan paragraf kesimpulan di bagian atas halaman yang menghubungkan fakta krisis di lapangan dengan urgensi riset AMTG Anda!
+
+---
+
+        // 2. Fetch Live News & Generate Summary
+        async function fetchReliefWebNews() {
+            const feedContainer = document.getElementById('news-feed');
+            try {
+                // Gunakan URL API yang lebih sederhana
+                const url = 'https://api.reliefweb.int/v1/reports?appname=gprc&query[value]=Gaza&sort[]=date:desc&limit=10';
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+
+                if (data && data.data && data.data.length > 0) {
+                    let html = '';
+                    data.data.forEach(item => {
+                        // Handle date if it exists
+                        let dateStr = 'Terkini';
+                        if (item.fields && item.fields.date && item.fields.date.created) {
+                            dateStr = new Date(item.fields.date.created).toLocaleDateString('id-ID', {
+                                day: 'numeric', month: 'short', year: 'numeric'
+                            });
+                        }
+                        const title = item.fields ? item.fields.title : item.title;
+                        const link = item.fields && item.fields.url ? item.fields.url : item.url || '#';
+                        html += `
+                            <div class="news-item">
+                                <div class="news-date">${dateStr}</div>
+                                <div class="news-title">
+                                    <a href="${link}" target="_blank">${title}</a>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    feedContainer.innerHTML = html;
+                    generateAutoSummary(data.data); // Generate the relevant summary
+                } else {
+                    feedContainer.innerHTML = '<div style="text-align:center; padding:20px; color:red;">Data berita tidak ditemukan.</div>';
+                }
+            } catch (error) {
+                console.error("Error fetching news:", error);
+                feedContainer.innerHTML = `<div style="text-align:center; padding:20px; color:red;">Koneksi API gagal: ${error.message}</div>`;
+            }
+        }
+
+---
+
+        // 3. Auto Summary Logic
+        function generateAutoSummary(articles) {
+            let kwHealth = 0, kwFood = 0, kwShelter = 0;
+            articles.forEach(item => {
+                const titleRaw = item.fields && item.fields.title ? item.fields.title : item.title || "";
+                const title = titleRaw.toLowerCase();
+                if(title.includes('health') || title.includes('hospital') || title.includes('medical') || title.includes('disease')) kwHealth++;
+                if(title.includes('food') || title.includes('hunger') || title.includes('famine') || title.includes('water')) kwFood++;
+                if(title.includes('shelter') || title.includes('displaced') || title.includes('refugee') || title.includes('camp') || title.includes('evacuation')) kwShelter++;
+            });
+
+            let analysis = `Berdasarkan 10 laporan kemanusiaan aktual terbaru dari PBB, `;
+            let issues = [];
+            
+            if (kwHealth > 0) issues.push('krisis kesehatan dan kolapsnya fasilitas medis');
+            if (kwFood > 0) issues.push('ancaman kelaparan (famine) dan krisis air bersih');
+            if (kwShelter > 0) issues.push('gelombang pengungsian masif (IDPs) akibat evakuasi');
+
+            if (issues.length > 0) {
+                analysis += `isu yang sangat mendesak dan mendominasi saat ini berpusat pada <strong>${issues.join(', ')}</strong>. `;
+                analysis += `Fakta di lapangan ini menegaskan argumen utama riset Anda: Intervensi dari otoritas formal (BoP/NCAG) tidak akan cukup cepat jika dikendalikan dari luar. Tata kelola rekonstruksi yang ideal (model AMTG) wajib mengintegrasikan <em>Local Ownership</em>, di mana komite-komite lokal diberdayakan untuk menjadi garda terdepan dalam mendistribusikan pasokan darurat dan mengelola area pengungsian yang dinamis.`;
+            } else {
+                analysis += `terdapat volatilitas krisis yang berkelanjutan di lapangan. Model AMTG yang diusulkan sangat relevan untuk menyediakan tata kelola transisi yang adaptif dan merangkul legitimasi akar rumput demi merespons dinamika ini secara lincah dan inklusif.`;
+            }
+
+            document.getElementById('auto-summary-text').innerHTML = analysis;
+            document.getElementById('auto-summary-box').style.display = 'block';
+        }
+
+---
+

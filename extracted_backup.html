@@ -1,0 +1,26 @@
+# Rencana Perbaikan Live Map & Ringkasan Berita Otomatis
+
+Terima kasih atas masukannya. Masalah peta (Leaflet) yang tampak tidak berfungsi (*blank/grey box*) di Live Server biasanya terjadi karena peta dirender saat tab **Live Map & News** dalam kondisi tersembunyi (`display: none`). Akibatnya, sistem peta tidak bisa menghitung dimensi layarnya dengan benar. 
+
+Terkait pembuatan **Ringkasan Relevan** dari berita langsung (Live News) dan peta konflik, kita bisa menambahkan fitur sintesis di dalam web. Berikut adalah saran penyelesaian yang akan saya lakukan:
+
+## 1. Perbaikan Bug Live Map (Evaluasi Tampilan)
+- **Akar Masalah:** Pustaka peta *Leaflet.js* gagal memuat gambar (*tiles*) karena kontainernya tidak memiliki dimensi saat pertama kali halaman dimuat (karena tab-nya disembunyikan).
+- **Solusi Eksekusi:** Saya akan merombak urutan eksekusi kode *Javascript*-nya. Peta baru akan diinisialisasi (*dimuat*) **tepat pada saat Anda mengklik tab "Live Map & News" untuk pertama kalinya**. Ini akan menjamin peta langsung muncul dengan ukuran yang sempurna di Live Server.
+
+## 2. Pembuatan Fitur "Ringkasan Relevan Otomatis"
+Mengingat Anda ingin agar berita dan data peta yang masuk disajikan dalam bentuk ringkasan yang relevan dengan topik riset Anda (Tata Kelola/AMTG Gaza), saya menyarankan fitur berikut:
+
+- **Modul Sintesis Otomatis (Auto-Summary):** 
+  Setelah web berhasil menarik 10 berita terbaru dari *ReliefWeb API*, saya akan membuat algoritma *Javascript* sederhana yang membaca judul-judul berita tersebut.
+- **Kategorisasi Cerdas:** Sistem akan mendeteksi kata kunci (*keywords*) di berita terbaru. 
+  - Jika banyak berita tentang "Health/Hospitals", ringkasan akan menyoroti urgensi fase 1 rekonstruksi medis.
+  - Jika banyak berita tentang "Displacement/Shelter", ringkasan akan menyoroti krisis *internal displaced persons* (IDP) yang butuh intervensi komite lokal.
+- **Output:** Sebuah kotak "💡 **Insight & Ringkasan Relevan (Otomatis)**" akan muncul di atas peta/berita. Kotak ini akan menjembatani apa yang sedang terjadi hari ini dengan proposal riset Anda.
+
+## Open Questions
+> [!IMPORTANT]
+> 1. Apakah Anda setuju dengan pendekatan memperbaiki peta (memuatnya saat tab diklik) dan membuat algoritma peringkas otomatis (*Auto-Summary*) berbasis kata kunci dari berita terbaru?
+> 2. Apakah Anda ingin kotak ringkasan ini diletakkan di bagian atas tab *Live Map* agar menjadi hal pertama yang dibaca juri?
+
+Silakan klik **Proceed** jika Anda setuju dengan saran ini, dan saya akan langsung membereskan *bug* peta beserta pembuatan ringkasannya di `index.html`!
